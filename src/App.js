@@ -154,7 +154,7 @@ function App() {
       <div className='container mt-3'>
       <div className='row'>
         {movies.map((movie)=>(
-          <div key={movie.id} className='col-md-4 mb-3' onClick={/*agregar on click*/}>
+          <div key={movie.id} className='col-md-4 mb-3' onClick={()=>setPlaying(true)}>
             <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={600} width="100%"></img>
             <h4 className='text-center'>{movie.title}</h4>
           </div>
